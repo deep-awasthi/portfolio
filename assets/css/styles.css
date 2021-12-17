@@ -288,10 +288,13 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__python{
+.skills__language{
   width: 95%;
 }
-.skills__cpp{
+.skills__android{
+  width: 85%;
+}
+.skills__react{
   width: 85%;
 }
 .skills__ml{
@@ -300,10 +303,7 @@ img{
 .skills__sql{
   width: 90%;
 }
-.skills__dj{
-  width: 85%;
-}
-.skills__blog{
+.skills__git{
   width: 85%;
 }
 .skills__img{
