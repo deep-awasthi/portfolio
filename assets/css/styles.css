@@ -288,22 +288,22 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__language{
+.skills__java{
   width: 95%;
 }
-.skills__android{
+.skills__iOS{
   width: 80%;
 }
 .skills__node{
   width: 75%;
 }
-.skills__ml{
+.skills__swift{
   width: 85%;
 }
-.skills__sql{
+.skills__docker{
   width: 90%;
 }
-.skills__git{
+.skills__spring{
   width: 85%;
 }
 .skills__img{
