@@ -1,289 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Awasthi — Developer</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Deep.</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/deep-awasthi/portfolio/blob/main/assets/img/deep_awasthi.pdf"
+             target="_blank" class="nav-resume">Resume ↗</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <!-- =====BOX ICONS===== -->
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-        <title>Deep Awasthi</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Deep</a>
-                </div>
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Deep Awasthi</h1>
+      <p class="hero-role reveal">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc reveal">
+        Building scalable, distributed systems that handle<br class="br-desktop">
+        real-world load — reliably, efficiently, at scale.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="https://github.com/deep-awasthi/portfolio/blob/main/assets/img/deep_awasthi.pdf"
+           target="_blank" class="btn btn-primary">View Resume ↗</a>
+        <a href="#projects" class="btn btn-ghost">See My Work</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://www.linkedin.com/in/deep-awasthi" target="_blank" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/deep-awasthi" target="_blank" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="http://deepawasthi.medium.com" target="_blank" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <div class="scroll-line"></div>
+    </a>
+  </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#tools" class="nav__link">Tools</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#blogs" class="nav__link">Blogs</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+  <section class="about s-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-frame">
+            <img src="assets/img/about.jpg" alt="Deep Awasthi" />
+          </div>
+        </div>
+        <div class="about-text-col">
+          <span class="eyebrow reveal">About Me</span>
+          <h2 class="sec-heading reveal">
+            Engineering systems<br><em>built to scale</em>
+          </h2>
+          <p class="body-text reveal">
+            I'm a software engineer focused on building scalable, distributed systems. I design high-performance backends that handle real-world traffic — clean architecture, low latency, high availability.
+          </p>
+          <p class="body-text reveal">
+            My core stack is <strong>Java &amp; Spring Boot</strong> on the backend, with <strong>Go</strong> for performance-critical services. I work extensively in <strong>system design</strong>, distributed messaging with Kafka, caching with Redis, and container orchestration on Kubernetes.
+          </p>
+          <p class="body-text reveal">
+            I also apply <strong>machine learning</strong> to production systems — bridging intelligent features with scalable infrastructure. Outside of engineering, I'm an anime enthusiast always chasing the next great story.
+          </p>
+          <div class="about-cta reveal">
+            <a href="https://www.linkedin.com/in/deep-awasthi" target="_blank" class="btn btn-dark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;flex-shrink:0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Connect on LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='devicon-ros-original colored'></i>
-                </div>
-            </nav>
-        </header>
+  <section class="skills s-dark" id="skills">
+    <div class="container">
+      <span class="eyebrow eyebrow-glow reveal">Expertise</span>
+      <h2 class="sec-heading sec-heading-light reveal">Core Skills</h2>
+      <div class="skills-grid" id="skillsGrid">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Deep Awasthi</span><br>
-                        <ul>
-                            <li><span>Developer</span></li>
-                        </ul>
-                    </h1>
-
-                    <a href="https://github.com/deep-awasthi/portfolio/blob/main/assets/img/deep_awasthi.pdf" class="button">Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/deep-awasthi" class="home__social-icon"><i class='devicon-linkedin-plain colored'>Linkedin</i></a>
-                    <a href="https://github.com/deep-awasthi" class="home__social-icon"><i class='devicon-github-original colored' >Github</i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/perfil.png" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Deep Awasthi</h2>
-                        <p class="about__text">I am a software developer.
-                        Currently, I am working on backend and iOS development.<br>
-                        I have experience in programming in Java and Swift as well as qualified in <b>Scalable API development</b> and <b>High Quality iOS Apps</b>. 
-                        Apart from being a developer, I love watching anime.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-java-plain-wordmark colored skills__icon'></i>
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__java">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-apple-original colored skills__icon'></i>
-                                <span class="skills__name">iOS Development</span>
-                            </div>
-                            <div class="skills__bar skills__iOS">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-swift-plain colored skills__icon'></i>
-                                <span class="skills__name">Swift</span>
-                            </div>
-                            <div class="skills__bar skills__swift">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-spring-original-wordmark colored skills__icon'></i>
-                                <span class="skills__name">SpringBoot</span>
-                            </div>
-                            <div class="skills__bar skills__spring">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-javascript-plain colored skills__icon'></i>
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-                            <div class="skills__bar skills__node">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>              
-                        <img src="assets/img/skills.png" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== TOOLS =====-->
-            <section class="tools section" id="tools">
-                <h2 class="section-title">Tools</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-xcode-plain colored skills__icon'></i>
-                                <span class="skills__name">Xcode</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-intellij-plain colored skills__icon'></i>
-                                <span class="skills__name">IntelliJ</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-apachekafka-original-wordmark colored skills__icon'></i>
-                                <span class="skills__name">Kafka</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>              
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-postman-plain colored skills__icon'></i>
-                                <span class="skills__name">Postman</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-git-plain colored skills__icon'></i>
-                                <span class="skills__name">Git</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='devicon-docker-plain colored skills__icon' ></i>
-                                <span class="skills__name">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/SecureHer/"><img src="assets/img/A1.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Covid19Tracker/"><img src="assets/img/A2.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/CollegeConnect"><img src="assets/img/A3.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/FruitZone"><img src="assets/img/A4.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Object-Detector"><img src="assets/img/A5.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Accident-Detection"><img src="assets/img/A6.png" alt=""></a>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== BLOGS =====-->
-            <section class="work section" id="blogs">
-                <h2 class="section-title">Blogs</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/SecureHer/"><img src="assets/img/A1.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Covid19Tracker/"><img src="assets/img/A2.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/CollegeConnect"><img src="assets/img/A3.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/FruitZone"><img src="assets/img/A4.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Object-Detector"><img src="assets/img/A5.png" alt=""></a>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://github.com/deep-awasthi/Accident-Detection"><img src="assets/img/A6.png" alt=""></a>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/xayapkgb" method="POST" class="contact__form" id='form'>
-                        <input type="mail" placeholder="Email" class="contact__input" name='mail'>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" name='message'></textarea>
-                        <input type="submit" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        
-        <footer class="footer">
-            <p class="footer__title">Deep Awasthi</p>
-            <div class="footer__social">
-                <a href="https://twitter.com/deep_awasthi_" class="footer__icon"><i class='devicon-twitter-original' ></i></a>
-                <a href="http://deepawasthi.medium.com" class="footer__icon"><i class='bx bxl-medium' ></i></a>
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <i class="devicon-java-plain colored skill-icon"></i>
+              <span class="skill-name">Java</span>
             </div>
-            <p>Made With ❤️</p>
-            <p>&#169;2024 Copyright All Right Reserved</p>
-        </footer>
+            <span class="skill-pct">98%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="98"></div></div>
+        </div>
 
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <i class="devicon-spring-plain colored skill-icon"></i>
+              <span class="skill-name">Spring Boot</span>
+            </div>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
+        </div>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <svg class="skill-icon skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="15" y="2" width="7" height="7" rx="1.5"/>
+                <rect x="8.5" y="15" width="7" height="7" rx="1.5"/>
+                <path d="M5.5 9v3l6.5 3 6.5-3V9"/><path d="M12 12v3"/>
+              </svg>
+              <span class="skill-name">System Design</span>
+            </div>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="92"></div></div>
+        </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <svg class="skill-icon skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
+                <circle cx="8" cy="19" r="2"/><circle cx="16" cy="19" r="2"/>
+                <path d="M12 7v3M7 12h3M14 12h3M9.5 17.5l2-2M14.5 17.5l-2-2M10 13.5l-3 2M14 13.5l3 2"/>
+              </svg>
+              <span class="skill-name">Machine Learning</span>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <i class="devicon-go-plain colored skill-icon"></i>
+              <span class="skill-name">Go</span>
+            </div>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="82"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-row">
+            <div class="skill-name-group">
+              <i class="devicon-javascript-plain colored skill-icon"></i>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="tools s-light" id="tools">
+    <div class="container">
+      <span class="eyebrow reveal">Toolkit</span>
+      <h2 class="sec-heading reveal">Tools &amp; Technologies</h2>
+      <div class="tools-grid" id="toolsGrid">
+        <div class="tool-chip reveal" data-tool="intellij"><i class="devicon-intellij-plain colored tool-icon"></i>IntelliJ IDEA</div>
+        <div class="tool-chip reveal" data-tool="kafka"><i class="devicon-apachekafka-original colored tool-icon"></i>Apache Kafka</div>
+        <div class="tool-chip reveal" data-tool="redis"><i class="devicon-redis-plain colored tool-icon"></i>Redis</div>
+        <div class="tool-chip reveal" data-tool="kubernetes"><i class="devicon-kubernetes-plain colored tool-icon"></i>Kubernetes</div>
+        <div class="tool-chip reveal" data-tool="git"><i class="devicon-git-plain colored tool-icon"></i>Git</div>
+        <div class="tool-chip reveal" data-tool="docker"><i class="devicon-docker-plain colored tool-icon"></i>Docker</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects s-dark" id="projects">
+    <div class="container">
+      <span class="eyebrow eyebrow-glow reveal">Work</span>
+      <h2 class="sec-heading sec-heading-light reveal">Selected Projects</h2>
+
+      <!-- ── FEATURED PROJECT ── -->
+      <a href="https://github.com/deep-awasthi/DevOrbit" target="_blank" class="proj-featured reveal">
+        <div class="proj-featured-label">Featured Project</div>
+        <div class="proj-featured-body">
+          <div class="proj-featured-left">
+            <span class="proj-cat">Full Stack · Developer Platform</span>
+            <h3 class="proj-featured-name">DevOrbit</h3>
+            <p class="proj-featured-desc">
+              A centralised platform giving software engineers everything they need in one orbit — curated learning paths, tech references, career resources, and community tools. Built on a microservices backbone with Spring Boot, Kafka for async event processing, Redis caching for fast reads, and Docker-based deployments designed to scale horizontally under high concurrent load.
+            </p>
+            <div class="proj-tags" style="margin-bottom:0">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </div>
+          <div class="proj-featured-right">
+            <div class="proj-stat"><span class="proj-stat-num">μsvc</span><span class="proj-stat-label">Architecture</span></div>
+            <div class="proj-stat"><span class="proj-stat-num">∞</span><span class="proj-stat-label">Horizontal scale</span></div>
+            <div class="proj-stat"><span class="proj-stat-num">async</span><span class="proj-stat-label">Event-driven</span></div>
+          </div>
+        </div>
+        <div class="proj-featured-footer">View on GitHub →</div>
+      </a>
+
+      <!-- ── OTHER PROJECTS ── -->
+      <div class="proj-grid" id="projGrid">
+
+        <a href="https://github.com/deep-awasthi/LocalKart" target="_blank" class="proj-card reveal">
+          <span class="proj-cat">E-commerce · Backend</span>
+          <h3 class="proj-name">LocalKart</h3>
+          <p class="proj-desc">A full-featured e-commerce platform with product catalogue management, cart, order processing, and inventory — backed by a Spring Boot REST API and relational database.</p>
+          <div class="proj-tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST API</span>
+          </div>
+          <div class="proj-arrow">GitHub →</div>
+        </a>
+
+        <a href="https://github.com/deep-awasthi/PeerPay" target="_blank" class="proj-card reveal">
+          <span class="proj-cat">Fintech · Real-Time</span>
+          <h3 class="proj-name">PeerPay</h3>
+          <p class="proj-desc">A real-time UPI payment app supporting peer-to-peer transfers, transaction history, and live payment status updates — built for low-latency, high-reliability financial operations.</p>
+          <div class="proj-tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">UPI</span>
+          </div>
+          <div class="proj-arrow">GitHub →</div>
+        </a>
+
+        <a href="https://github.com/deep-awasthi/ResumePro" target="_blank" class="proj-card reveal">
+          <span class="proj-cat">SaaS · Backend</span>
+          <h3 class="proj-name">ResumePro</h3>
+          <p class="proj-desc">A resume-building SaaS application with dynamic template rendering, PDF export, and user profile management — driven by a Java backend with REST APIs for all CRUD operations.</p>
+          <div class="proj-tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PDF</span>
+          </div>
+          <div class="proj-arrow">GitHub →</div>
+        </a>
+
+      </div>
+
+      <div class="proj-resume-cta reveal">
+        <p class="proj-resume-label">Want to see more of my work?</p>
+        <a href="https://github.com/deep-awasthi/portfolio/blob/main/assets/img/deep_awasthi.pdf"
+           target="_blank" class="btn btn-outline-white">Download Full Resume (PDF) ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blogs s-light" id="blogs">
+    <div class="container">
+      <span class="eyebrow reveal">Writing</span>
+      <h2 class="sec-heading reveal">From the Blog</h2>
+
+      <!-- ── FEATURED ARTICLE ── -->
+      <a href="https://medium.com/@deepawasthi/kubernetes-guide-1528f5e127f9" target="_blank" class="blog-featured reveal">
+        <div class="blog-featured-inner">
+          <div class="blog-featured-content">
+            <span class="blog-cat">DevOps · Containers</span>
+            <h3 class="blog-title">The Complete Kubernetes Guide: From Pods to Production</h3>
+            <p class="blog-excerpt">
+              A comprehensive walkthrough of Kubernetes — covering core concepts like Pods, Deployments, Services, and ConfigMaps, then moving into production-grade topics: rolling updates, health probes, resource limits, Helm charts, and cluster observability. Everything you need to go from zero to running workloads confidently in K8s.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read">10 min read</span>
+              <span class="blog-sep">·</span>
+              <span class="blog-read">Kubernetes · Docker · DevOps</span>
+            </div>
+          </div>
+          <div class="blog-featured-arrow">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── 2 COMPACT ARTICLES ── -->
+      <div class="blog-mini-grid">
+
+        <a href="https://medium.com/@deepawasthi/java-exception-bdec69dc24c7" target="_blank" class="blog-mini reveal">
+          <span class="blog-cat">Java · Best Practices</span>
+          <h4 class="blog-mini-title">Java Exception Handling Done Right: Patterns, Pitfalls, and Production Tips</h4>
+          <div class="blog-meta" style="margin-top:auto">
+            <span class="blog-read">6 min read</span>
+            <span class="blog-sep">·</span>
+            <span class="blog-read">Java · Exception Handling</span>
+          </div>
+          <div class="blog-mini-arrow">Read on Medium →</div>
+        </a>
+
+        <a href="https://medium.com/@deepawasthi/docker-guide-6ea99331a77f" target="_blank" class="blog-mini reveal">
+          <span class="blog-cat">DevOps · Containers</span>
+          <h4 class="blog-mini-title">Docker for Backend Developers: Containers, Images, and Compose Explained</h4>
+          <div class="blog-meta" style="margin-top:auto">
+            <span class="blog-read">7 min read</span>
+            <span class="blog-sep">·</span>
+            <span class="blog-read">Docker · DevOps · Backend</span>
+          </div>
+          <div class="blog-mini-arrow">Read on Medium →</div>
+        </a>
+
+      </div>
+
+      <!-- ── MORE CTA ── -->
+      <div class="blogs-more reveal">
+        <p class="blogs-more-label">I write about system design, distributed systems, backend engineering, and DevOps on Medium.</p>
+        <a href="http://deepawasthi.medium.com" target="_blank" class="btn btn-dark">Read all articles ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact s-dark" id="contact">
+    <div class="container contact-container">
+      <span class="eyebrow eyebrow-glow reveal">Say Hello</span>
+      <h2 class="sec-heading sec-heading-light reveal">Let's build something<br>great together</h2>
+      <p class="body-text body-text-muted-dark reveal">
+        Have a project in mind, or just want to connect? My inbox is always open.
+      </p>
+      <form action="https://formspree.io/f/xayapkgb" method="POST" class="contact-form reveal" id="contactForm">
+        <input type="email" name="email" placeholder="deepawasthi.dev@email.com" class="form-field" required />
+        <textarea name="message" placeholder="Tell me about your project…" rows="6" class="form-field form-textarea" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message →</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p class="footer-name">Deep Awasthi</p>
+          <p class="footer-copy">© 2024 · Made with ❤️</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/deep-awasthi" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/deep-awasthi" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="http://deepawasthi.medium.com" target="_blank" aria-label="Medium">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          </a>
+          <a href="https://twitter.com/deep_awasthi_" target="_blank" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.213 5.567zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
